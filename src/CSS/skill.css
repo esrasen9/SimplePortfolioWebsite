@@ -1,0 +1,51 @@
+.skill-progress {
+    width: 100%;
+}
+
+.skill-bar{
+    display: flex;
+    align-items: center;
+    color: #adadad;
+    font-weight: bold;
+}
+
+.skill-title {
+    font-size: 1.4rem;
+    color: #2e344e;
+    font-weight: bold;
+}
+
+
+.progressbar {
+    width: 100%;
+    height: 0.5rem;
+    left: 0;
+    bottom: 0;
+    margin-left: 1rem;
+    background-color: rgba(250, 209, 51, 0.35);
+    position: relative;
+}
+
+.inner-progressbar{
+    /*The progress width will come from the property */
+    content:"";
+    position: absolute;
+    height: 100%;
+    bottom:0;
+    left: 0;
+    background-color: rgb(141, 98, 234);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    row-gap: 3rem;
+    column-gap: 4rem;
+    margin: 4rem 0;
+}
+
+@media screen and (max-width: 750px){
+    .skills-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -1,0 +1,128 @@
+.AboutPage {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.about-section {
+    background-color: rgba(247, 246, 251, 0.5);
+    padding: 10%;
+    border-radius: 10px;
+    border: 1px solid rgba(135, 129, 239, 0.4);
+    margin: 0 0 4rem 0;
+}
+
+.my-skills-section {
+    background-color: rgba(247, 246, 251, 0.5);
+    padding: 6%;
+    border-radius: 10px;
+    border: 1px solid rgba(135, 129, 239, 0.4);
+    margin: 4rem 0;
+}
+
+.services-section {
+    background-color: rgba(247, 246, 251, 0.5);
+    padding: 6%;
+    border-radius: 10px;
+    border: 1px solid rgba(135, 129, 239, 0.4);
+    margin: 4rem 0;
+}
+
+.ImageSection{
+    display: flex;
+    margin: 4rem 0;
+}
+.image {
+    height: 50vh;
+}
+
+.image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.about-info {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    font-weight: bold;
+    color: rgba(18, 53, 130, 0.75);
+}
+.details-left-section{
+    color: #123582;
+}
+
+.about-info span {
+    color: rgb(131, 128, 249);
+}
+.about-info h4 {
+    font-size: 1.7rem;
+}
+
+.about-text {
+    padding: 1rem 0;
+    color: rgba(46, 52, 78, 0.75);
+}
+
+.about-details {
+    display: flex;
+}
+
+.about-details p {
+    padding: 0.4rem 0;
+}
+
+.details-right-section {
+    color: #2e344e;
+    margin-left: 2rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: #7BB4BD;;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.btn::after {
+    position: absolute;
+    content:"";
+    width: 0;
+    height: 0.3rem;
+    left: 0;
+    bottom: 0;
+    background-color: mediumslateblue;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
+.about-container {
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px){
+    .ImageSection {
+        flex-direction: column;
+    }
+    .about-info {
+        margin: 4rem 0 0 0;
+    }
+    .btn {
+        margin-top: 4rem;
+    }
+    .AboutPage {
+        margin-top: 2rem;
+    }
+}

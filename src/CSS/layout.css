@@ -1,0 +1,28 @@
+.App {
+    background-image: url("../img/pastel-wallpaper.jpeg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.App .sidebar {
+    width: 100%;
+    height: 9%;
+    border-right: 2px solid rgba(179, 197, 249, 0.70)
+}
+
+.main-content {
+    width: 100%;
+    min-height: 91vh;
+    display: grid;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+}
+
+
+.content{
+    margin: 0 5rem 5rem 5rem;
+}
+
+

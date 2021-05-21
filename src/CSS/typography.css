@@ -1,0 +1,98 @@
+.HomePage {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    color: #FDFDFE;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home-avatar {
+    width: 60%;
+    margin-left: 13%;
+    margin-top: 6%;
+}
+
+.hero {
+    border-radius: 5px ;
+    padding: 0 10% 10%;
+    height: 100%;
+    align-items:center;
+    justify-content: center;
+    border: 20px solid rgba(124, 63, 238, 0.01);
+}
+
+.hero-content {
+    padding: 10%;
+}
+
+
+.hero-text {
+    color: rgba(109, 100, 128, 0.9);
+    text-align: center;
+    font-size: 3.6rem;
+    letter-spacing: 3px;
+    font-family: "Noto Sans Old Italic", serif;
+}
+
+.hero-text span{
+    color: #7c3fee;
+}
+
+.home-sub-text {
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgba(109, 100, 128, 0.7);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.icon-holder {
+    opacity: 0.7;
+    margin: 0 0.6rem;
+}
+
+.icon {
+    font-size: 2.2rem;
+    color: #47314C;
+    transition: all 0.4s ease-in-out;
+}
+
+.icon-github:hover {
+    color: black;
+}
+.icon-twitter:hover{
+    color: deepskyblue;
+}
+.icon-youtube:hover{
+    color: red;
+}
+
+@media screen and (min-width: 750px) {
+    .HomePage,.AboutPage,.BlogsPage,.ContactPage{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        padding: 5% 5% 2%;
+    }
+    .icon-holder {
+        padding-top: 2rem;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .HomePage {
+        padding-bottom: 12%;
+    }
+
+}

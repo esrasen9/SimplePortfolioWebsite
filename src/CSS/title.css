@@ -1,0 +1,30 @@
+.Title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #2e344e;
+    position: relative;
+    padding-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.Title::before {
+    content: "";
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    background-color: #2e344e;
+    width: 6rem;
+    height: 0.4rem;
+    border-radius: 50px;
+}
+
+.Title::after {
+    content: "";
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    background-color: rgba(141, 98, 234, 0.8);
+    width: 3rem;
+    height: 0.4rem;
+    border-radius: 50px;
+}
